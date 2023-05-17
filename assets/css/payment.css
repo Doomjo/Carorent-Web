@@ -1,0 +1,112 @@
+button{
+  background: #4154f1;
+	border: 0;
+  margin: 10%;
+	padding: 10px 30px;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: 25px;
+  float: right;
+}
+
+button:hover{
+  background: #5969f3;
+}
+
+label{
+  color:#4154f1;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+.price{
+  margin-bottom: 5%;
+}
+
+.rentperiod hr{
+  margin-top: 10%;
+}
+.totalprice #totalprice{
+  position: relative;
+  float:right;
+}
+
+.tax{
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+  position: relative;
+}
+
+.tax #servicetax{
+  float: right;
+}
+
+.govtax{
+  margin-top: 10%;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+  position: relative;
+  
+}
+
+.govtax #govtax{
+  float: right;
+}
+
+.insurance{
+  margin-top: 10%;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+  position: relative;
+}
+
+.insurance #insurancefees{
+  float: right;
+}
+
+.deposit{
+  margin-top: 10%;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+  position: relative;
+}
+
+.deposit #deposit{
+  float: right;
+}
+
+.container-price{
+  margin-bottom: 15%;
+}
+
+.totalpayment{
+  margin-top: 10%;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+  position: relative;
+}
+
+.totalpayment #totalpayment{
+  float: right;
+}
+
+
+.entry-img{
+  position: relative;
+}
+.entry-img > img{
+max-width: 100%; 
+height: auto;
+}

@@ -1,0 +1,87 @@
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -10%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+.profile-header{
+    color:#012970;
+}
+
+.profile-header h3{
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    
+}
+
+.booking-header{
+    color: #012970;
+}
+
+.booking-header h3{
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    
+}
+
+.row{
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+}
+
+button{
+    background: #4154f1 !important;
+    position: relative !important;
+    border: 0 !important;
+    margin-top: 10% !important;
+    margin-left:50% !important;
+    padding: 10px 20px !important;
+    color: #fff !important;
+    transition: 0.4s !important;
+    border-radius: 25px !important;
+    height: 40px !important;
+    width: 150px !important;
+}
+
+.profile-header{
+    margin-top: 50px;
+    color:#012970;
+}
+
+@media (max-width: 992px){
+    .profile-img{
+        position: relative ;
+        right: 100% ;
+        top: 20%;
+    }
+
+    .profile-img .file {
+        position: relative;
+        overflow: hidden;
+        margin-top: -10%;
+        width: 70%;
+        border: none;
+        border-radius: 0;
+        font-size: 15px;
+        background: #212529b8;
+    }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <title>Carorent|Vaccine</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="theme-color" content= "#4154f1">
+  
+  <!-- Favicons -->
+  <link href="assets/img/logo-top.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src="https://kit.fontawesome.com/e9522c5d33.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+
+  <!-- service worker -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="./assets/img/icon-192x192.png">
+  <link rel="apple-touch-icon" href="./assets/img/icon-256x256.png">
+  <link rel="apple-touch-icon" href="./assets/img/icon-384x384.png">
+  <link rel="apple-touch-icon" href="./assets/img/icon-512x512.png">
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61320f79d6e7610a49b3791c/1feloot8l';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_ggu3ncSw2NYRMo3cwL4wz");
+  })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm('service_pjiwopj', 'template_32oxncg', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+  </script>
+  
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.4.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <script src=index2.js></script>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo2.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="aboutUs.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="car-list.html">Rent a Car</a></li>
+          <li><a class="nav-link scrollto" href="contactUs.html">Contact Us</a></li>
+          <li><a class="nav-link scrollto" href="faq.html">FAQ</a></li>
+          <li><a class="getstarted" href="login.html">Login</a></li>
+          <script>
+            var login_check = sessionStorage.getItem('login');
+            var username = sessionStorage.getItem('username');
+            if(login_check == "true"){
+              document.querySelector(".getstarted").innerHTML = document.querySelector(".getstarted").innerHTML = '<li class="dropdown" style="color:white; ><a href="profile.html"><span>Hai, '+ username +'</span> <i class="fas fa-chevron-down"></i></i></a><ul><li><a href="profile.html">My Profile</a></li><li><a href="#" onclick="logout2()">Log Out</a></li></ul>';
+              document.querySelector(".getstarted").href = "#";
+            }
+          </script>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Free Aruz Rent For Vaccinated People</li>
+        </ol>
+        <h2>Free Aruz Rent For Vaccinated People</h2>
+
+      </div>
+    </section>
+
+    <!-- ======= NewsSection ======= -->
+    <section id="news" class="news">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="assets/img/news/cover.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="vaccine.html">Free Perodua Aruz Rent for Vaccinated People</a>
+              </h2>
+
+             
+
+              <div class="entry-content">
+                <p>
+                  Good news for everyone as COVID-19 vaccinations have started and more are being administered throughout Malaysia.So to encourage everyone to get vaccine for covid-19,Carorent had decided to do a campaign.
+                </p>
+
+                <p>
+                  Here are few information
+                </p>
+
+                <p>
+                 
+                </p>
+
+                <h3>Steps to get Aruz</h3>
+                <p>
+                  
+                </p>
+                <div class = "gap">
+                  <img class="img" src="assets/img/step1.png" class="img-fluid" alt="" height="300" width="225">
+                  <img class="img" src="assets/img/step2.png" class="img-fluid" alt="" height="300" width="225">
+                  <img class="img" src="assets/img/step3.png" class="img-fluid" alt="" height="300" width="225">
+                </div>
+
+                
+              </div>
+
+              <div class="entry-footer">
+                <i class="bi bi-folder"></i>
+                <ul class="cats">
+                  <li><a href="#">Vaccine</a></li>
+                </ul>
+
+                <i class="bi bi-tags"></i>
+                <ul class="tags">
+                  <li><a href="#">Vaccine</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="vaccine.html">Tang Shun Xin</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="vaccine.html"><time datetime="2021-03-01">March 1, 2021</time></a></li>
+                </ul>
+              </div>
+
+            </article><!-- End news entry -->
+
+            <div class="news-author d-flex align-items-center">
+              <img src="assets/img/news/blog-recent-5.jpg" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Tang Shun Xin</h4>
+                <div class="social-links">
+                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                </div>
+              </div>
+            </div><!-- End news author bio -->
+
+            <div class="news-comments">
+              <div class="comment-form">
+                <div  id="pastcomments"><h2>Comment</h2></div>
+              </div>
+            </div>
+            <div class="news-comments">
+              <div class="comment-form">
+                <h4>Leave a comment</h4>
+                <p><i>*Your email address will not be published</i></p>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="text" placeholder="Enter your name" class="form-control" id="name" >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="text" placeholder="Enter your Email" class="form-control" id="email" >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="text" aria-rowcount="5" placeholder=" Enter comment" class="form-control" id="comment" > 
+                      </div>
+                    </div>
+                  <button class="btn btn-primary" id="addbtn" value="send">Submit</button>
+                  <button class="btn btn-primary" type="button" value="clear" onclick="location.reload()">Clear</button>
+                </form>
+              </div>
+
+            </div><!-- End news comments -->
+
+            <script>
+              const notification = new Notification("Dear Valued Customer, Are You Vaccinated ?", {
+              body:"Get A Free Aruz Rental Today For Vaccinated People!",
+              icon: "assets/img/icon-192x192.png",
+              });
+            </script>
+
+            <script>
+              let time = new Date();
+              let mon = time.getMonth()+1;
+              let y = time.getFullYear();
+              let d = time.getDate();
+              let h = time.getHours(); 
+              let m = time.getMinutes(); 
+
+              if(h<10){
+                h = '0'+h;
+              }
+              if(m<10){
+                m = '0'+m;
+              }
+              let now = h + ":" + m;
+              let current = d + "/" + mon + "/" + y;
+
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                  apiKey: "AIzaSyAekOrfwb3qXJCTz_yCEm4kSnIQpvM1Ego",
+                  authDomain: "carorent-main.firebaseapp.com",
+                  databaseURL: "https://carorent-main-default-rtdb.asia-southeast1.firebasedatabase.app",
+                  projectId: "carorent-main",
+                  storageBucket: "carorent-main.appspot.com",
+                  messagingSenderId: "588998238751",
+                  appId: "1:588998238751:web:b348d81dbd1c7e1e1e6b2a"
+                };
+                firebase.initializeApp(firebaseConfig);
+              //Rootref is the whole database.
+              const rootRef = firebase.database().ref();
+              //commentsRef is just the pageCountsNode
+              const commentsRef = rootRef.child('user');
+              //Listen for click on Submit Comment button, and post comment.
+              document.getElementById("addbtn").addEventListener("click", function () {
+                  if(document.getElementById('comment').value != ''){
+                    if(document.getElementById('name').value == '' ){
+                        var newname = document.getElementById('name').value.replace('', "Anonymous");
+                    }
+                    else{
+                      var newname = document.getElementById('name').value;
+                    }
+                    //Replace line breaks in comment with br tags.
+                    var newcomment = document.getElementById('comment').value.replace(/\n/g, "<br>");
+
+                    //Define a new, keyed post.
+                    var newPostRef = commentsRef.push();
+                    //Fill tne new keyed post with data
+                    newPostRef.set({
+                        name: newname.trim(),
+                        comment: newcomment.trim(),
+                        email: document.getElementById('email').value,
+                        date: current,
+                        time: now
+                    });
+                    alert("Comment has been added");
+                 
+            
+                  }
+                  else{
+                    alert("Please fill in the comment");
+                  }
+              });
+
+              function showpastcomments() {
+                  var showat = document.getElementById('pastcomments');
+                  //Get comments whose from page equals this page's pathname.
+                  var commentsRef = firebase.database().ref('user');
+                  commentsRef.once('value', function (snapshot) {
+                      snapshot.forEach(function (itemSnapshot) {
+                          //Get the object for one snapshot
+                          var itemData = itemSnapshot.val();
+                          var comment = itemData.comment;
+                          var name = itemData.name;
+                          var date = itemData.date;
+                          var time = itemData.time;
+                          var email = itemData.email;
+                          showat.innerHTML += '<div class="comment"><div class="d-flex"><div class="comment-img"><i class="fas fa-user-circle" style="font-size:60px"></i></div><div><h5><a href="">'+ name +'</a></h5><time>'+date +' '+ time +'</time><p>'+ comment +'</p></div></div></div>'
+                      })
+      
+                  })
+              }
+              //Called when page first opens and also after Submit button click to show all comments for this page.
+              showpastcomments();
+           </script>
+
+          </div><!-- End news entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+              <h3 class="sidebar-title">Recent Posts</h3>
+              <div class="sidebar-item recent-posts">
+                <div class="post-item clearfix">
+                  <img src="assets/img/news/cover.png" alt="">
+                  <h4><a href="vaccine.html">Free Aruz Rent for Vaccinated People</a></h4>
+                  <time>March 1, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news/donation.jpg" alt="">
+                  <h4><a href="vaccine.html">Carorent Chairman, Dato Wong, donated 10billion to people in need</a></h4>
+                  <time>Jun 15, 2021</time>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- news sidebar -->
+          
+          <!--Social media plugin-->
+        <div style="overflow-x:auto;">
+          <div class="col-lg-4">
+              <h3 class="sidebar-title">Facebook Post</h3>
+                <div class="post-item clearfix">
+                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCarorentMY%2Fposts%2F113848627679668&show_text=true&width=500" width="500" height="410" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                </div><!-- End sidebar recent posts-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End news Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Leave an email and stay updated to more of our updates!</p>
+          </div>
+            <div class="col-lg-6">
+              <form id="contact-form">
+                <input type="email" name="user_email" placeholder="Email Address">
+                <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo2.png" alt="">
+            </a>
+            <p><h6>Best car rent service in Malaysia<h6></p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/CarorentMY" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/carorentmy/" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="aboutUs.html">About us</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="contactUs.html">Contact Us</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-phone"></i>
+              <strong>Phone:&nbsp; </strong>011-30572003<br>
+              <i class="fas fa-envelope"></i>
+              <strong>Email:&nbsp;</strong> help.carorent@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Carorent 2021</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!--Firebase Settings-->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+  <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>
