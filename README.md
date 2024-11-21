@@ -11,6 +11,7 @@ Main Page:
 ![image](https://github.com/user-attachments/assets/3d6fbc7a-e226-4168-a874-e28d653da774)
 
 Chatbot:
+
 ![image](https://github.com/user-attachments/assets/3b1b6734-11de-42bf-bea6-2ec25c025568)
 
 FAQ:
@@ -28,5 +29,6 @@ Payment Page:
 ![image](https://github.com/user-attachments/assets/7e86d074-3bf5-4047-9eba-fae0676aa25b)
 
 Billing Invoice (PDF):
+
 ![image](https://github.com/user-attachments/assets/e8e3e05d-0a3e-4e80-b043-64f82d9d8af0)
 
